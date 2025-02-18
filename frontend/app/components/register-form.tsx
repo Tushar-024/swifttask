@@ -67,7 +67,7 @@ export function RegisterForm({ onSuccess }: { onSuccess: () => void }) {
 
         toast({
           title: "Registration successful",
-          description: "Welcome to TaskMaster!",
+          description: "Welcome to SwiftTask!",
         });
         onSuccess();
         router.push("/dashboard");

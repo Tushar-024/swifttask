@@ -1,38 +1,14 @@
 services:
-  api:
+  swifttask-api:
     build: .
     ports:
-      - 3000:3000
+      - 3001:3000
     networks:
-      - todo-app-network
+      - swifttask-network
     volumes:
       - .:/app
-    depends_on:
-      - mongo
-
-  mongo:
-    image: mongo:latest
-    ports:
-      - 27017:27017
-    networks:
-      - todo-app-network
-    volumes:
-      - ./data:/data/db
-
-  mongo-express:
-    image: mongo-express:latest
-    ports:
-      - 8081:8081
-    networks:
-      - todo-app-network
-    environment:
-      - ME_CONFIG_MONGODB_SERVER=mongo
-      - ME_CONFIG_BASICAUTH_USERNAME=admin
-      - ME_CONFIG_BASICAUTH_PASSWORD=admin123
-    depends_on:
-      - mongo
 
 networks:
-  todo-app-network:
+  swifttask-network:
     driver: bridge
 

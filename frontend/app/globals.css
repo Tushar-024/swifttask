@@ -75,7 +75,7 @@
   }
 }
 
-/* Custom styles for TaskMaster app */
+/* Custom styles for  app */
 .task-priority-1 { @apply bg-red-100 text-red-800; }
 .task-priority-2 { @apply bg-orange-100 text-orange-800; }
 .task-priority-3 { @apply bg-yellow-100 text-yellow-800; }

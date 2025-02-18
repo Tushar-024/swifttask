@@ -6,7 +6,7 @@ export function Header() {
     <header className="py-4 px-6 bg-white shadow-sm">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-primary">
-          TaskMaster
+          SwiftTask
         </Link>
         <nav>
           <ul className="flex space-x-4">

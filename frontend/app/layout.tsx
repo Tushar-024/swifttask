@@ -6,7 +6,7 @@ import { AuthProvider } from "./context/AuthContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "TaskMaster - Organize Your Life",
+  title: "SwiftTask - Organize Your Life",
   description: "Efficiently manage your tasks and boost productivity",
 };
 

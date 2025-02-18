@@ -67,7 +67,7 @@ export function LoginForm({ onSuccess }: { onSuccess: () => void }) {
 
         toast({
           title: "Login successful",
-          description: "Welcome back to TaskMaster!",
+          description: "Welcome back to SwiftTask !",
         });
 
         router.push("/dashboard");

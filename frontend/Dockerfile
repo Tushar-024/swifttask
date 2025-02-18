@@ -27,6 +27,6 @@ RUN npm ci --production
 
 COPY --from=builder /usr/src/app/ .
 
-EXPOSE 3001
+EXPOSE 3002
 
 CMD [ "npm", "start" ]

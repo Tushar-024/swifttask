@@ -1,0 +1,17 @@
+services:
+  frontend:
+    build:
+      context : .
+      dockerfile: Dockerfile
+    image: frontend
+    container_name: frontend
+    ports:
+      - "3002:3002"
+    volumes:
+      - .:/app
+    networks:
+      - swifttask-network
+
+networks:
+  swifttask-network:
+    driver: bridge

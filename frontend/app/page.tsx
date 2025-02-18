@@ -10,7 +10,7 @@ export default function Home() {
       <main className="flex-grow">
         <section className="py-20 px-6 bg-gradient-to-r from-primary to-primary-foreground text-white">
           <div className="container mx-auto text-center">
-            <h1 className="text-5xl font-bold mb-6">Welcome to TaskMaster</h1>
+            <h1 className="text-5xl font-bold mb-6">Welcome to SwiftTask</h1>
             <p className="text-xl mb-8">Organize your tasks, boost your productivity</p>
             <div className="space-x-4">
               <LoginButton />
@@ -37,10 +37,25 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section id="testimonials" className="py-20 px-6 bg-gray-100">
+          <div className="container mx-auto">
+            <h2 className="text-3xl font-bold mb-8 text-center">What Our Users Say</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <TestimonialCard
+                name="John Doe"
+                feedback="SwiftTask has transformed the way I manage my tasks. Highly recommend!"
+              />
+              <TestimonialCard
+                name="Jane Smith"
+                feedback="A must-have tool for anyone looking to boost their productivity."
+              />
+            </div>
+          </div>
+        </section>
       </main>
       <footer className="py-6 px-6 bg-gray-100">
         <div className="container mx-auto text-center text-gray-600">
-          &copy; 2023 TaskMaster. All rights reserved.
+          &copy; 2025 SwiftTask. All rights reserved.
         </div>
       </footer>
     </div>
@@ -56,3 +71,11 @@ function FeatureCard({ title, description }: { title: string; description: strin
   )
 }
 
+function TestimonialCard({ name, feedback }: { name: string; feedback: string }) {
+  return (
+    <div className="bg-white p-6 rounded-lg shadow-md">
+      <p className="text-gray-600 mb-4">"{feedback}"</p>
+      <h4 className="text-xl font-semibold">{name}</h4>
+    </div>
+  )
+}
